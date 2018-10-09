@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "bookstore-app.fullname" . }}
+  labels:
+    app: {{ template "bookstore-app.name" . }}
+    chart: {{ template "bookstore-app.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: node
+      protocol: TCP
+      name: node
+      nodePort: {{ .Values.service.nodePort }}
+  selector:
+    app: {{ template "bookstore-app.name" . }}
+    release: {{ .Release.Name }}

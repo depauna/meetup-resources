@@ -1,0 +1,54 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: book-store
+    component: "front-end"
+  name: book-store-service
+  namespace: jenkins
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+    targetPort: fe
+    nodePort: 31444
+  selector:
+    app: book-store
+    component: "front-end"
+  type: NodePort
+
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: book-store
+    component: "front-end"
+  name: book-store-deployment
+  namespace: jenkins
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
+  minReadySeconds: 5
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: book-store
+        component: "front-end"
+    spec:
+      containers:
+      - image: depauna/book-store:10
+        name: book-store
+        env:
+        - name: MONGOHOST
+          value: "mongo"
+        ports:
+        - containerPort: 3000
+          name: fe
+      restartPolicy: Always

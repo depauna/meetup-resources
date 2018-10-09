@@ -1,0 +1,41 @@
+# Custom values for bookstore-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+image:
+  repository: depauna/book-store
+  tag: 11
+  pullPolicy: IfNotPresent
+
+maxSurge: 50%
+maxUnavailable: 50%
+minReadySeconds: 5
+
+service:
+  type: NodePort
+  port: 3000
+  nodePort: 31444
+
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  hosts:
+  - chart-example.local
+  tls: []
+
+resources:
+  requests:
+    memory: 500Mi
+    cpu: 100m
+  limits:
+    memory: 1Gi
+    cpu: 500m
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
