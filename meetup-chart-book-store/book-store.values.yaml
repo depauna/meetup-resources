@@ -6,8 +6,8 @@ replicaCount: 3
 
 image:
   repository: depauna/book-store
-  tag: 11
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 
 maxSurge: 50%
 maxUnavailable: 50%
