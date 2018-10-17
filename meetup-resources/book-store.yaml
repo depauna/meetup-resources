@@ -1,3 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/app-root: /
+  name: book-store-ingress
+  namespace: <userx>
+spec:
+  rules:
+  - host: kubernetes-elb-test-1078957791.eu-west-1.elb.amazonaws.com
+    http:
+      paths:
+      - backend:
+          serviceName: book-store-service
+          servicePort: 3000
+        path: /<userx>
+
 ---
 apiVersion: v1
 kind: Service
@@ -6,17 +23,16 @@ metadata:
     app: book-store
     component: "front-end"
   name: book-store-service
-  namespace: jenkins
+  namespace: <userx>
 spec:
   ports:
   - port: 3000
     protocol: TCP
     targetPort: fe
-    nodePort: 31444
   selector:
     app: book-store
     component: "front-end"
-  type: NodePort
+  type: ClusterIP
 
 ---
 apiVersion: extensions/v1beta1
@@ -26,7 +42,7 @@ metadata:
     app: book-store
     component: "front-end"
   name: book-store-deployment
-  namespace: jenkins
+  namespace: <userx>
 spec:
   replicas: 1
   strategy:
@@ -43,12 +59,17 @@ spec:
         component: "front-end"
     spec:
       containers:
-      - image: depauna/book-store:10
+      - image: dockerusername/book-store:<userx>
         name: book-store
+        # command: ["sh"]
+        # args: ["-c", "npm config set mean-angular6:context 'user2'"]
         env:
         - name: MONGOHOST
-          value: "mongo"
+          value: "mongo-service"
+        - name: CONTEXTROOT
+          value: "/<userx>/"
         ports:
         - containerPort: 3000
           name: fe
+        imagePullPolicy: Always
       restartPolicy: Always
