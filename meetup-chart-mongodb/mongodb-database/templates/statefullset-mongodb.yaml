@@ -47,7 +47,7 @@ spec:
         volumeMounts:
         - mountPath: /data/db
           name: mongodb-data
-          subPath: {{ .Values.firstName }}{{ .Values.lastName }}/mongodb
+          subPath: {{ .Values.userName }}/mongodb
       volumes:
       - name: mongodb-data
         hostPath:

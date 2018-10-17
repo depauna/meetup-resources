@@ -4,8 +4,7 @@
 
 replicaCount: 1
 
-firstName: Natan
-lastName: Depauw
+userName: userx
 
 image:
   repository: mongo
