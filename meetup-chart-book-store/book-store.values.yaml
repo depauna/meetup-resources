@@ -4,6 +4,8 @@
 
 replicaCount: 1
 
+userName: userx
+
 image:
   repository: depauna/book-store
   tag: user1

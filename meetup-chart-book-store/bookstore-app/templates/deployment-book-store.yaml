@@ -32,7 +32,7 @@ spec:
           - name: MONGOHOST
             value: "mongo-mongodb-database-service"
           - name: CONTEXTROOT
-            value: "/user1/"
+            value: "/{{ .Values.userName }}/"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: node
@@ -40,13 +40,13 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /user1/api
+              path: "/{{ .Values.userName }}/api"
               port: {{ .Values.service.port }}
             initialDelaySeconds: 20
             periodSeconds: 20
           readinessProbe:
             httpGet:
-              path: /user1
+              path: "/{{ .Values.userName }}"
               port: {{ .Values.service.port }}
             initialDelaySeconds: 30
             periodSeconds: 10
