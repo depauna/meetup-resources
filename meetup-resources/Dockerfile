@@ -12,6 +12,6 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 chmod +x ./kubectl && \
 mv ./kubectl /usr/local/bin/kubectl
 ENV KUBECONFIG=/${var}.conf
-COPY ${var}.conf /${var}.conf
-COPY ${var}.crt /${var}.crt
-COPY ${var}.key /${var}.key
+COPY $HOME/${var}.conf.new /${var}.conf
+COPY $HOME/.cert/${var}.crt /${var}.crt
+COPY $HOME/.cert/${var}.key /${var}.key
