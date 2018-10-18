@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1bf66c7-7f3f-4947-8bff-77e78848f342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetup-chart-book-store/book-store.values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-chart-book-store/book-store.values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetup-resources/book-store.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-resources/book-store.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +31,7 @@
           <entry key="nginx-ingress-controller-service" value="2" />
           <entry key="sh" value="3" />
           <entry key="tpl" value="2" />
-          <entry key="yaml" value="48" />
+          <entry key="yaml" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -42,7 +39,7 @@
           <entry key="Bash" value="2" />
           <entry key="Dockerfile" value="3" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="YAML" value="48" />
+          <entry key="YAML" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,7 +49,7 @@
           <entry key="Dockerfile-full" value="81" />
           <entry key="gitignore" value="61" />
           <entry key="sh" value="197" />
-          <entry key="txt" value="138" />
+          <entry key="txt" value="153" />
           <entry key="yaml" value="609" />
         </counts>
       </usages-collector>
@@ -60,7 +57,7 @@
         <counts>
           <entry key="Bash" value="197" />
           <entry key="Dockerfile" value="160" />
-          <entry key="PLAIN_TEXT" value="289" />
+          <entry key="PLAIN_TEXT" value="304" />
           <entry key="YAML" value="609" />
         </counts>
       </usages-collector>
@@ -77,38 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meetup-resources/book-store.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/service-book-store.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -118,15 +88,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meetup-chart-mongodb/mongodb.values.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -164,8 +125,8 @@
         <option value="$PROJECT_DIR$/meetup-chart-mongodb/mongodb-database/templates/statefullset-mongodb.yaml" />
         <option value="$PROJECT_DIR$/meetup-resources/book-store.yaml" />
         <option value="$PROJECT_DIR$/meetup-chart-book-store/book-store.values.yaml" />
-        <option value="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" />
         <option value="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml" />
+        <option value="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" />
       </list>
     </option>
   </component>
@@ -223,7 +184,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="TF_FMT" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539824803650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539825069600" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -352,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539817253390</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="book-store helm">
+      <created>1539824821129</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539824821129</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -400,12 +368,10 @@
     <MESSAGE value="update templating" />
     <MESSAGE value="delete" />
     <MESSAGE value="update mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="update mongo" />
+    <MESSAGE value="book-store helm" />
+    <option name="LAST_COMMIT_MESSAGE" value="book-store helm" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/values.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/Chart.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -508,10 +474,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meetup-resources/deployapp.sh">
+    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/service-book-store.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="51">
+          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/values.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -522,6 +498,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/meetup-resources/deployapp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/book-store.values.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -529,24 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/service-book-store.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
