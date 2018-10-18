@@ -28,11 +28,15 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          command: ["/bin/sh", "-c"]
+          args: ["npm config set mean-angular6:context $APICONTEXTROOT && npm start"]
           env:
           - name: MONGOHOST
             value: "mongo-mongodb-database-service"
           - name: CONTEXTROOT
             value: "/{{ .Values.userName }}/"
+          - name: APICONTEXTROOT
+            value: "{{ .Values.userName }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: node
