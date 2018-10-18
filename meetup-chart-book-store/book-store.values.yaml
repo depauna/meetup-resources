@@ -20,7 +20,9 @@ service:
 
 ingress:
   enabled: true
-  annotations: {}
+  annotations: {
+    nginx.ingress.kubernetes.io/app-root: /
+  }
   path: /user1
   hosts:
   - chart-example.local
