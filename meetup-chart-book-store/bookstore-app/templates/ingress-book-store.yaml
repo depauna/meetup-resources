@@ -10,10 +10,8 @@ metadata:
     chart: {{ template "bookstore-app.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-{{- with .Values.ingress.annotations }}
   annotations:
-{{ toYaml . | indent 4 }}
-{{- end }}
+    nginx.ingress.kubernetes.io/app-root: /
 spec:
   rules:
   {{- range .Values.ingress.hosts }}
