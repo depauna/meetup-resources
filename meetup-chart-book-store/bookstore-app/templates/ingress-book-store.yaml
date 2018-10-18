@@ -14,7 +14,6 @@ metadata:
     nginx.ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  {{- range .Values.ingress.hosts }}
     - host: kubernetes-elb-test-1078957791.eu-west-1.elb.amazonaws.com
       http:
         paths:
@@ -22,5 +21,4 @@ spec:
             backend:
               serviceName: {{ $fullName }}
               servicePort: {{ .Values.service.internalPort }}
-  {{- end }}
 {{- end }}
