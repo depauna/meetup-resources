@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins
+  name: jenkins-service
   namespace: <userx>
   labels:
     app: jenkins

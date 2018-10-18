@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1bf66c7-7f3f-4947-8bff-77e78848f342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetup-resources/jenkins.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/meetup-resources/jenkins.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +23,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="3" />
+          <entry key="Dockerfile" value="4" />
           <entry key="Dockerfile-ICP" value="2" />
           <entry key="Dockerfile-full" value="1" />
           <entry key="gitignore" value="2" />
@@ -31,40 +31,58 @@
           <entry key="nginx-ingress-controller-service" value="2" />
           <entry key="sh" value="3" />
           <entry key="tpl" value="2" />
-          <entry key="yaml" value="54" />
+          <entry key="yaml" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="2" />
-          <entry key="Dockerfile" value="3" />
+          <entry key="Dockerfile" value="4" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="YAML" value="54" />
+          <entry key="YAML" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="160" />
+          <entry key="Dockerfile" value="175" />
           <entry key="Dockerfile-ICP" value="9" />
           <entry key="Dockerfile-full" value="81" />
           <entry key="gitignore" value="61" />
           <entry key="sh" value="197" />
           <entry key="txt" value="165" />
-          <entry key="yaml" value="621" />
+          <entry key="yaml" value="630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="197" />
-          <entry key="Dockerfile" value="160" />
+          <entry key="Dockerfile" value="175" />
           <entry key="PLAIN_TEXT" value="316" />
-          <entry key="YAML" value="621" />
+          <entry key="YAML" value="630" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/meetup-resources/jenkins.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meetup-resources/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meetup-resources/deployapp.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -127,8 +145,6 @@
         <option value="$PROJECT_DIR$/meetup-resources/ingress.yaml" />
         <option value="$PROJECT_DIR$/meetup-resources/ingress-book.yaml" />
         <option value="$PROJECT_DIR$/meetup-resources/mongo.yaml" />
-        <option value="$PROJECT_DIR$/meetup-resources/Dockerfile" />
-        <option value="$PROJECT_DIR$/meetup-resources/jenkins.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/meetup-chart-mongodb/mongodb.values.yaml" />
         <option value="$PROJECT_DIR$/meetup-chart-mongodb/mongodb-database/templates/service-mongodb.yaml" />
@@ -137,6 +153,8 @@
         <option value="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/deployment-book-store.yaml" />
         <option value="$PROJECT_DIR$/meetup-chart-book-store/book-store.values.yaml" />
         <option value="$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/ingress-book-store.yaml" />
+        <option value="$PROJECT_DIR$/meetup-resources/jenkins.yaml" />
+        <option value="$PROJECT_DIR$/meetup-resources/Dockerfile" />
       </list>
     </option>
   </component>
@@ -194,7 +212,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="TF_FMT" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539825624632" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539850033794" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -351,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539825319933</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="remove anno">
+      <created>1539825638003</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1539825638003</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,20 +517,6 @@
     <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/_helpers.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/meetup-resources/jenkins.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meetup-resources/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meetup-chart-book-store/bookstore-app/templates/service-book-store.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -548,6 +559,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meetup-resources/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meetup-resources/jenkins.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="86" column="17" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
         </state>
       </provider>
     </entry>
