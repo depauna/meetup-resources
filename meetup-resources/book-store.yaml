@@ -61,8 +61,8 @@ spec:
       containers:
       - image: dockerusername/book-store:<userx>
         name: book-store
-        # command: ["sh"]
-        # args: ["-c", "npm config set mean-angular6:context 'user2'"]
+        command: ["/bin/sh", "-c"]
+        args: ["npm config set mean-angular6:context $CONTEXTROOT && npm start"]
         env:
         - name: MONGOHOST
           value: "mongo-service"

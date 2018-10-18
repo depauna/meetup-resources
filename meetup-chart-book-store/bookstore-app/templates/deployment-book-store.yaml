@@ -30,7 +30,9 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           env:
           - name: MONGOHOST
-            value: "mongodb-latest-mongodb-database"
+            value: "mongo-mongodb-database-service"
+          - name: CONTEXTROOT
+            value: "/user1/"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: node
@@ -38,13 +40,13 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /api
+              path: /user1/api
               port: {{ .Values.service.port }}
             initialDelaySeconds: 20
             periodSeconds: 20
           readinessProbe:
             httpGet:
-              path: /
+              path: /user1
               port: {{ .Values.service.port }}
             initialDelaySeconds: 30
             periodSeconds: 10
